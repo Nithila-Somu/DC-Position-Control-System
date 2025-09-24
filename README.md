@@ -43,15 +43,9 @@ We arrive at the following open-loop transfer function by eliminating I(s) betwe
 
 ## Program
 
-```
-num[1]
-den[1 10 20]
-sys=tf(num,den)
-step(sys)
-```
+
 
 ## Output
-<img width="1600" height="985" alt="image" src="https://github.com/user-attachments/assets/7b5580a5-ac91-4eb8-89af-9354849f31f9" />
 
 ## Result
 Thus, the position of dc motor is controlled using MATLAB. 

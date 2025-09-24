@@ -42,10 +42,13 @@ We arrive at the following open-loop transfer function by eliminating I(s) betwe
 5.	Analyse the output in open loop and closed loop.
 
 ## Program
+
+```
 num[1]
 den[1 10 20]
 sys=tf(num,den)
-step(sys) 
+step(sys)
+```
 
 ## Output
 <img width="1600" height="985" alt="image" src="https://github.com/user-attachments/assets/7b5580a5-ac91-4eb8-89af-9354849f31f9" />

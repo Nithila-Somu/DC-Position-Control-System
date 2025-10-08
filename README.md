@@ -42,10 +42,24 @@ We arrive at the following open-loop transfer function by eliminating I(s) betwe
 5.	Analyse the output in open loop and closed loop.
 
 ## Program
-
+k = 0.0274
+J = 3.2284e-6
+B = 3.5077e-6
+R = 4
+L = 2.75e-6
+S = tf('s')
+ol_sys = kt/((R+L*S)*(J*S*S+B*S))
+subplot(2,1,1)
+step(ol_sys)
+title('Open Loop Response')
+cl_sys = feedback(ol_sys,1)
+subplot(2,1,2)
+step(cl_sys)
+title('Closed Loop Response')
 
 
 ## Output
+<img width="697" height="619" alt="image" src="https://github.com/user-attachments/assets/bf4c6854-486c-4fdd-8d95-81ef9b6a8432" />
 
 ## Result
 Thus, the position of dc motor is controlled using MATLAB. 
